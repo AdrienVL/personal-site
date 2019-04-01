@@ -5,6 +5,7 @@
     <title>My Portfolio</title>
     <!--Our own links come after downloaded styling, override their configurations-->
     <link rel="stylesheet" href="css/superslides.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
           integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -12,45 +13,117 @@
 </head>
 <body>
 
-    <div id="slides">
+<div id="slides">
 
-        <div class="overlay"></div>
-        <div class="slides-container">
-            <img src="img/adventure.jpg" alt="">
-            <img src="img/airplane.jpg" alt="">
-            <img src="img/alternative-energy.jpg" alt="">
-        </div>
-
-        <div class="title-message">
-            <div class="heading">
-                <p class="main">ADRIEN LHEMANN</p>
-                <p class="sub typed"></p>
-            </div>
-        </div>
-
-        <nav class="slides-navigation">
-            <a href="#" class="next"></a>
-            <a href="#" class="prev"></a>
-        </nav>
+    <div class="overlay"></div>
+    <div class="slides-container">
+        <img src="img/adventure.jpg" alt="">
+        <img src="img/airplane.jpg" alt="">
+        <img src="img/alternative-energy.jpg" alt="">
     </div>
 
+    <div class="title-message">
+        <div class="heading">
+            <p class="main">ADRIEN LHEMANN</p>
+            <p class="sub typed"></p>
+        </div>
+    </div>
 
-    <div id="about" class="section">
+    <nav class="slides-navigation">
+        <a href="#" class="next"></a>
+        <a href="#" class="prev"></a>
+    </nav>
+</div>
 
+
+<div id="about" class="section">
+
+    <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <img src="img/maxime.jpg">
+                <img class="about-image" src="img/maxime.jpg">
             </div>
 
             <div class="col-md-7">
 
+                <h4>My name is Adrien Lhemann</h4>
+
+                <p>Eat an easter feather as if it were a bird then burp victoriously,
+                    but tender. Lick sellotape lies down catasstrophe.
+                    Fat baby cat best buddy little guy. Present belly, scratch hand when stroked.
+                    Scratch me there, elevator butt dream about hunting birds i cry and cry and cry unless you pet me,
+                    and then maybe i cry just for fun, hate dog, for hey! you there, with the hands favor packaging over
+                    toy.
+                    Sit on human they not getting up ever eat the fat cats food sleep on dog bed, force dog to sleep on
+                    floor,
+                    poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy
+                    fur-balls but
+                    fat baby cat best buddy little guy and hide from vacuum cleaner. </p>
+                <p>Tuxedo cats always looking dapper litter kitter kitty litty little kitten big roar roar feed me pet
+                    me pet
+                    me pet me pet me, bite, scratch, why are you petting me yet leave fur on owners clothes. Purr when
+                    being
+                    pet hate dog, stares at human while pushing stuff off a table so lies down .</p>
+
             </div>
         </div>
-
     </div>
 
+</div>
+
+<div id="skills" class="skillsSection section">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+                <h2>TECHNICAL SKILLS</h2>
+                <p>Representation of my proficiency in each skill</p>
+            </div>
+            <div class="owl-carousel owl-theme">
+
+                <div class="skill">
+                    <span class="chart" data-percent="67">
+                        <span class="percent">67</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>HTML</h4>
+                    <p>Hyper Text Markup Language</p>
+                </div>
+
+                <div class="skill">
+                    <span class="chart" data-percent="67">
+                        <span class="percent">67</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>CSS</h4>
+                    <p>Cascading Style Sheet</p>
+                </div>
+
+                <div class="skill">
+                    <span class="chart" data-percent="67">
+                        <span class="percent">67</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>Javascript</h4>
+                    <p>Web Development</p>
+                </div>
+
+                <div class="skill">
+                    <span class="chart" data-percent="67">
+                        <span class="percent">67</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>Java</h4>
+                    <p>Server side</p>
+                </div>
 
 
+            </div>
+        </div>
+    </div>
+
+</div>
 
 
 <!--Linked The CDN-->
@@ -58,6 +131,8 @@
 <script src="js/jquery-3.3.1.js"></script>
 <script src="js/jquery.superslides.min.js"></script>
 <script src="js/typed.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.easypiechart.min.js"></script>
 <script src="js/script.js"></script>
 
 </body>
