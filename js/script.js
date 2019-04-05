@@ -61,4 +61,6 @@ $(document).ready(function() {
 
     })
 
+    $(".counter").countup(300);
+
 });
