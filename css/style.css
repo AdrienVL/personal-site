@@ -44,6 +44,27 @@ body{
     background-image: url(../icons/right-arrow.png)
 
 }
+.social-media{
+    z-index: 6;
+
+}
+
+
+.links .facebook {
+
+
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.links a.facebook{
+    left: 50px;
+    background-image: url(../icons/facebook-icon.png)
+}
+
 
 .title-message{
     position: absolute;
