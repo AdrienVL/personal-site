@@ -1,3 +1,21 @@
+$(window).on("load",function(){
+    $(".loader .inner").fadeOut(500, function(){
+        $(".loader").fadeOut(750);
+    });
+
+    $(".items").isotope({
+
+        filter: '*',
+        animationOptions: {
+            duration: 1500,
+            easing: 'linear',
+            queue: false
+        }
+    })
+
+})
+
+
 $(document).ready(function() {
 
     $('#slides').superslides({
@@ -81,15 +99,7 @@ $(document).ready(function() {
 
     $("[data-fancybox]").fancybox();
 
-    $(".items").isotope({
 
-        filter: '*',
-        animationOptions: {
-            duration: 1500,
-            easing: 'linear',
-            queue: false
-        }
-    })
 
 
     $("#filters a").click(function(){
@@ -111,17 +121,40 @@ $(document).ready(function() {
 
         return false;
 
-    })
+    });
+
+
+    $("#navigation li a").click(function(e){
+        e.preventDefault();
+        var targetElement = $(this).attr("href");
+        var targetPosition = $(targetElement).offset().top;
+        $("html, body").animate({ scrollTop: targetPosition -50}, "slow");
+    });
 
 
     const nav = $("#navigation");
+    //Position of the nav bar
     const navTop = nav.offset().top;
+
 
     $(window).on("scroll",stickyNavigation);
 
     function stickyNavigation(){
 
 
+        var body = $("body");
+
+        //Position you scroll to.
+        if($(window).scrollTop()>= navTop){
+            //Adding padding to fix jump
+            body.css("padding-top", nav.outerHeight() + "px");
+
+            body.addClass("fixedNav");
+        } else{
+
+            body.css("padding-top",0);
+            body.removeClass("fixedNav");
+        }
 
     }
 
