@@ -44,31 +44,17 @@ body{
     background-image: url(../icons/right-arrow.png)
 
 }
-/*.social-media{*/
-    /*z-index: 6;*/
-
-/*}*/
 
 
-/*.links {*/
-
-
-    /*width: 47px;*/
-    /*height: 47px;*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*border: 1px solid white;*/
-/*}*/
-
-
-/*.links a.facebook{*/
-    /*left: 50px;*/
-    /*background-image: url(../icons/facebook-icon.png)*/
-/*}*/
+social-sites{
+    width:100%;
+    align-content:center;
+}
 
 .social-media{
-    z-index: 150;
-    margin-bottom: -150px;
+    width: 47px;
+    height: 47px;
+    display:inline-block;
 
 
 }
@@ -82,10 +68,31 @@ body{
     height: 47px;
     background-size: cover;
     background-repeat: no-repeat;
-    border: 1px solid white;
-    z-index: 1500;
-    margin-top: -125px;
-    background-image: url(../icons/facebook-icon.png)
+    z-index: 5;
+    margin-top: -75px;
+    background-image: url(../icons/facebook-icon.png);
+    opacity:0.5;
+
+
+
+
+}
+
+.github {
+
+
+    position:absolute;
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 5;
+    margin-top: -75px;
+    background-image: url(../icons/github.png);
+    opacity:0.5;
+
+
+
 
 }
 
