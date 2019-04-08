@@ -48,13 +48,19 @@ body{
 
 social-sites{
     width:100%;
-    align-content:center;
+    text-align:center;
+    z-index: 100;
+    position:relative;
+
+
 }
 
 .social-media{
     width: 47px;
     height: 47px;
     display:inline-block;
+    position:relative;
+    bottom:100px;
 
 
 }
@@ -63,12 +69,10 @@ social-sites{
 .facebook {
 
 
-    position:absolute;
     width: 47px;
     height: 47px;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 5;
     margin-top: -75px;
     background-image: url(../icons/facebook-icon.png);
     opacity:0.5;
@@ -81,12 +85,11 @@ social-sites{
 .github {
 
 
-    position:absolute;
+
     width: 47px;
     height: 47px;
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 5;
     margin-top: -75px;
     background-image: url(../icons/github.png);
     opacity:0.5;
