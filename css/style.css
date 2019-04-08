@@ -30,6 +30,7 @@ body{
     background-size:cover;
     background-repeat: no-repeat;
 
+
 }
 
 .slides-navigation a.prev{
@@ -46,57 +47,44 @@ body{
 }
 
 
-social-sites{
+.social-sites{
     width:100%;
     text-align:center;
     z-index: 100;
     position:relative;
-
+    bottom: 100px;
 
 }
 
-.social-media{
+.facebook{
     width: 47px;
     height: 47px;
+    background-repeat: no-repeat;
     display:inline-block;
-    position:relative;
-    bottom:100px;
-
-
-}
-
-
-.facebook {
-
-
-    width: 47px;
-    height: 47px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-top: -75px;
+    background-position: center;
+    background-size: 80%;
     background-image: url(../icons/facebook-icon.png);
-    opacity:0.5;
-
-
 
 
 }
 
-.github {
+.facebook:hover{
+    background-size: cover;
+}
 
 
-
+.github{
     width: 47px;
     height: 47px;
-    background-size: cover;
     background-repeat: no-repeat;
-    margin-top: -75px;
+    display:inline-block;
+    background-position: center;
+    background-size: 80%;
     background-image: url(../icons/github.png);
-    opacity:0.5;
+}
 
-
-
-
+.github:hover{
+    background-size: cover;
 }
 
 
