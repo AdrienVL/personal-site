@@ -70,23 +70,54 @@ body{
 
 .facebook:hover{
     background-size: cover;
+    background-image: url(../icons/facebook-color.png);
 }
 
 
 .github{
+     width: 47px;
+     height: 47px;
+     background-repeat: no-repeat;
+     display:inline-block;
+     background-position: center;
+     background-size: 80%;
+     background-image: url(../icons/github.png);
+ }
+
+.github:hover{
+    background-size: cover;
+    background-image: url(../icons/github-color.png);
+}
+
+.linkedin{
     width: 47px;
     height: 47px;
     background-repeat: no-repeat;
     display:inline-block;
     background-position: center;
     background-size: 80%;
-    background-image: url(../icons/github.png);
+    background-image: url(../icons/linkedin.png);
 }
 
-.github:hover{
+.linkedin:hover{
     background-size: cover;
+    background-image: url(../icons/linkedin-color.png);
 }
 
+.messages{
+    width: 47px;
+    height: 47px;
+    background-repeat: no-repeat;
+    display:inline-block;
+    background-position: center;
+    background-size: 80%;
+    background-image: url(../icons/messages.png);
+}
+
+.messages:hover{
+    background-size: cover;
+    background-image: url(../icons/messages-color.png);
+}
 
 
 .title-message{
