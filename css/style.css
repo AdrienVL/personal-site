@@ -329,6 +329,21 @@ body{
 
 }
 
+.photoFilters{
+    list-style: none;
+
+}
+
+.photoFilter a{
+    color: black;
+    text-decoration: none;
+}
+
+.photoFilter a:hover{
+    color: #2980b9;
+    text-decoration: none;
+}
+
 .section .heading{
     text-align:center;
     width:100%;
